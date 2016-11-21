@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-image: url('/public/images/bg1.png');
+    background-attachment: fixed;
+    text-align: center;
+}
+.titlebar{
+    font-size: 4em;
+    text-align: center;
+    color:white;
+    padding: 16px 0 16px 0;
+}
+.page{
+    margin-left:10%;
+    margin-right:10%;
+}
+.pub-list{
+    text-align:center;
+    list-style:none;
+}
+.pub-list>li{
+    width:100%;
+    font-size: 2em;
+    min-width:530px;
+    min-height:100px;
+    background-color: rgba(85,255,85,0.4);
+    margin-top:10px;
+}
+.search{
+    text-align:center;
+}
+.list-item{
+    width:100%;
+    padding:16px;
+}
+.list-name{
+    font-size:2em;
+    display: block;
+}
+.list-rating, .list-rating-label{
+    display: inline-block;
+    font-size: 1em;
+}
+.list-desc{
+    display: block;
+    height:135px;
+    overflow-y: auto;
+}
+
+.list-img{
+    width:300px;
+    margin-right:16px;
+}
+.list-item-right{
+    display: inline-block;
+    width: calc(100% - (350px));
+    min-width:364px;
+}

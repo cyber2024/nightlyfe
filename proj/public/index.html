@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="description" content="night life detector">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Nightlyfe</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    </head>
+    <body>
+        <div class='page'>
+            <div class="titlebar">Where are you headed tonight?</div>
+            <div class="search">
+                <input type="text" id="location" placeholder="Location"/>
+                <button id="btnSearch">Search</button>
+            </div>
+            <div class="list">
+                <ul class="pub-list">
+                    <li>the thorny cunt</li>
+                    <li>the red dog</li>
+                    <li>the trendy fucker</li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <template id="list-item-template">
+            <li class="list-item">
+                <img class="list-img" src="http://findicons.com/files/icons/1176/dine_o_matic/128/pub.png"/>
+                <div class="list-item-right">
+                    <div class="list-name bordered">Loading pub...</div>
+                    <hr/>
+                    <div class="list-desc bordered">Loading description...</div>
+                    <hr/>
+                    <div class="list-rating-label">User Rating: </div>
+                    <div class="list-rating bordered">?</div>
+                    <div class="list-rating-label">/5</div>
+                </div>
+            </li>
+        </template>
+
+        
+    <script src="/public/js/script.js"></script>
+    <script src="/common/ajax-functions.js"></script>
+    <script src="/controllers/yelpController.client.js"></script>
+    </body>
+</html>
